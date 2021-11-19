@@ -10,12 +10,12 @@ export default function About() {
                 <br className="hidden lg:inline-block" /> 
               </h1>
               <p className="mb-8 leading-relaxed">
-              I am a Computer Systems Engineer from Guadalajara, Mexico. 
+              I'm a Computer Systems Engineer from Guadalajara, Mexico. 
               My experience in software development ranges from automotive systems to automation tools and chatbots.
               I am currently sharpening my skills to steer my career path towards front-end development.
               </p>
               <div className="flex justify-center">
-                <a
+                <a 
                   href="https://www.linkedin.com/in/david-perez-daher/"
                   className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
                   Linkedin
@@ -26,9 +26,9 @@ export default function About() {
                   What I've built
                 </a>
                 <a
-                  href="#testimonials"
+                  href="#prevJobs"
                   className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                  See My Past Work
+                  Work Experience
                 </a>
               </div>
             </div>
