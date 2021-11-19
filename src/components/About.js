@@ -16,12 +16,17 @@ export default function About() {
               </p>
               <div className="flex justify-center">
                 <a
-                  href="#contact"
-                  className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                  Work With Me
+                  href="https://www.linkedin.com/in/david-perez-daher/"
+                  className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                  Linkedin
                 </a>
                 <a
                   href="#projects"
+                  className="ml-4 inline-flex text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-500 hover:text-white rounded text-lg">
+                  What I've built
+                </a>
+                <a
+                  href="#testimonials"
                   className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                   See My Past Work
                 </a>
@@ -33,4 +38,8 @@ export default function About() {
                 alt="hero"
                 src="./profilepic.jpg"
               />
-            </d
+            </div>
+          </div>
+        </section>
+    );
+}
