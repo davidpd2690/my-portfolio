@@ -22,7 +22,7 @@ export default function About() {
               <div className="flex-col items-center p-2">
                 <a 
                   href="https://www.linkedin.com/in/david-perez-daher/" target="_blank"
-                  className="inline-flex text-white bg-blue-500 border-0 p-2 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                  className="inline-flex text-white bg-blue-500 border-0 p-1 focus:outline-none hover:bg-blue-600 rounded">
                   <AiOutlineLinkedin/>
                 </a>
               </div>

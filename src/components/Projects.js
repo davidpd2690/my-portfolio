@@ -4,8 +4,8 @@ import { projects } from "../data";
 
 export default function Projects() {
     return (
-        <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-          <div className="container p-10 mx-auto text-center lg:px-40 bg-gray-800 bg-opacity-40 rounded shadow-lg">
+        <section id="projects" className="text-gray-400 bg-gray-700 body-font p-8">
+          <div className="container p-20 mx-auto my-auto text-center lg:px-40 bg-gray-900 bg-opacity-40 rounded shadow-lg">
             <div className="flex flex-col w-full mb-20">
               <CodeIcon className="mx-auto inline-block w-10 mb-4" />
               <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">

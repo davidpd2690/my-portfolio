@@ -70,23 +70,5 @@ export const skills = [
   "Java",
   "Node",
   "SQL",
-  "Material UI",
-];
-
-export const social = [
-  {
-    social:
-      {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/david-perez-daher/",
-        "className":"fa fa-linkedin"
-      },
-    social:
-      {
-        "name":"github",
-        "url":"https://github.com/davidpd2690",
-        "className":"fa fa-github"
-      }
-    
-  }
+  "Tailwind CSS",
 ];
