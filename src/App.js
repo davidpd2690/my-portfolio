@@ -19,7 +19,7 @@ export default function App() {
       <Projects />
       <Skills />
       <PrevJobs />
-      <Contact />
+      <Footer />
     </main>
   );
 }

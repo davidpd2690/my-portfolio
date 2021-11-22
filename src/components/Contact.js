@@ -1,125 +1,39 @@
 import React from "react";
 
 export default function Contact() {
-
-    const [name, setName] = React.useState("");
-    const [email, setEmail] = React.useState("");
-    const [message, setMessage] = React.useState("");
-
-    const rowClass =
-    "flex flex-col sm:flex-row justify-between items-center sm:items-start py-3 border-t border-gray-300 last:border-none"
-  const leftClass = "w-full sm:w-1/3 font-medium text-center sm:text-left"
-  const rightClass = "flex-1 text-center sm:text-left"
-
-    function encode(data) {
-        return Object.keys(data)
-          .map(
-            (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-          )
-          .join("&");
-      }
-    
-      function handleSubmit(e) {
-        e.preventDefault();
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", name, email, message }),
-        })
-          .then(() => alert("Message sent!"))
-          .catch((error) => alert(error));
-      }
-
       return (
-        <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
-            height="100%"
-            title="map"
-            className="absolute inset-0"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            style={{ filter: "opacity(0.7)" }}
-            src=""
-          />
-          <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <div className="lg:w-1/2 px-12">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+        <section id="contact">
+          <div className="container px-5 py-10 mx-auto">
+            <div className="grid grid-flow-col grid-rows-1 gap-4">
+            <div>
+              <h2 className="title-font font-semibold text-white">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                Zapopan <br />
-                Jalisco, México
-              </p>
-            </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a className="text-indigo-400 leading-relaxed">
-                david.pd2690@email.com
-              </a>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
+                <p className="p-2">
+                  Zapopan, Jalisco, México
+                </p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+</svg>
+                {/* <h2 className="title-font font-semibold text-white">
+                  EMAIL
+                </h2> */}
+                  <p className="text-indigo-400 p-2 ">
+                    david.pd2690@email.com
+                  </p>
+              </div>
+              <div>
+              <h2 className="title-font font-semibold text-white">
                 PHONE
               </h2>
-              <p className="leading-relaxed">+52 331 799 9208</p>
+                <p className="p-2">
+                  +52 331 799 9208
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-        <form
-          netlify
-          name="contact"
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
-          </h2>
-          <p className="leading-relaxed mb-5">
-            If you think I'm a fit for your team, send me a message, an email, or look me up on Linkedin!
-          </p>
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <button
-            type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Submit
-          </button>
-        </form>
-      </div>
+            </div>       
     </section>
       );
     }
