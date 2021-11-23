@@ -15,7 +15,7 @@ export default function Projects() {
                 Take a look at a couple of simple apps that I've built. Nothing too fancy, but they show what I can do. They are deployed to github pages using workflows.
               </p>
             </div>
-            <div className="flex flex-wrap -m-11 overflow-auto sm:overflow-scroll">
+            <div className="flex flex-wrap -m-11 overflow-auto">
               {projects.map((project) => (
                 <a
                   href={project.link}
