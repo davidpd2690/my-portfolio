@@ -1,6 +1,6 @@
 import React from "react";
 import FadeIn from 'react-fade-in';
-import { AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone, AiFillGithub } from "react-icons/ai";
 
 export default function About() {
     return (
@@ -19,12 +19,21 @@ export default function About() {
               </p>
               <p className="inline-flex items-center p-2"><AiOutlineMail/>&nbsp;david.pd2690@gmail.com</p>
               <p className="inline-flex items-center p-2"><AiOutlinePhone/>&nbsp;+52 331 799 9208</p>
-              <div className="flex-col items-center p-2">
+              <div className="grid grid-flow-col grid-cols-2 grid-rows-1">
+              <div className="flex-col items-center p-1">
                 <a 
                   href="https://www.linkedin.com/in/david-perez-daher/" target="_blank"
                   className="inline-flex text-white bg-blue-500 border-0 p-1 focus:outline-none hover:bg-blue-600 rounded">
                   <AiOutlineLinkedin/>
                 </a>
+              </div>
+              <div className="flex-col items-center p-1">
+                <a 
+                  href="https://github.com/davidpd2690" target="_blank"
+                  className="inline-flex text-white bg-gray-700 border-0 p-1 focus:outline-none hover:bg-gray-800 rounded">
+                  <AiFillGithub/>
+                </a>
+              </div>
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

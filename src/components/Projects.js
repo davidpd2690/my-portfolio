@@ -4,7 +4,7 @@ import { projects } from "../data";
 
 export default function Projects() {
     return (
-        <section id="projects" className="text-gray-400 bg-gray-700 body-font p-8">
+        <section id="projects" className="text-gray-400 bg-gray-800 body-font p-8">
           <div className="container p-20 mx-auto my-auto text-center lg:px-40 bg-gray-900 bg-opacity-40 rounded shadow-lg">
             <div className="flex flex-col w-full mb-20">
               <CodeIcon className="mx-auto inline-block w-10 mb-4" />
@@ -12,16 +12,15 @@ export default function Projects() {
                 Apps I've Built
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                fuga dolore.
+                Take a look at a couple of simple apps that I've built. Nothing too fancy, but they show what I can do. They are deployed to github pages using workflows.
               </p>
             </div>
-            <div className="flex flex-wrap -m-4">
+            <div className="flex flex-wrap -m-11">
               {projects.map((project) => (
                 <a
                   href={project.link}
                   key={project.image}
+                  target="_blank"
                   className="sm:w-1/2 w-100 p-4">
                   <div className="flex relative">
                     <img

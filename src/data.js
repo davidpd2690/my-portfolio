@@ -1,35 +1,19 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
+    title: "To-Do App",
     subtitle: "React Hooks",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+      "This is a very simple to-do list app created with React Hooks. Click to visit a live demo of the app, or go to: https://github.com/davidpd2690/to-do to see how it was built.",
+    image: "./todolist.gif",
+    link: "https://davidpd2690.github.io/to-do",
+  },
+  {
+    title: "Google Keep clone",
+    subtitle: "React and Material UI",
+    description:
+    "This is a clone of the Google Keep app created with React and material UI. Click to visit a live demo of the app, or go to: https://github.com/davidpd2690/keep-app to see how it was built.",
+    image: "./keepapp.gif",
+    link: "https://davidpd2690.github.io/keep-app",
   },
 ];
 
@@ -68,7 +52,9 @@ export const skills = [
   "JavaScript",
   "React",
   "Java",
+  "Python",
   "Node",
   "SQL",
+  "Material UI",
   "Tailwind CSS",
 ];
