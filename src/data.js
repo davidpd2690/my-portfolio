@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "To-Do App",
-    subtitle: "React Hooks",
+    title: "Chat App",
+    subtitle: "React, Chat Engine io, Axios",
     description:
-      "This is a very simple to-do list app created with React Hooks. Click to visit a live demo of the app, or go to: https://github.com/davidpd2690/to-do to see how it was built.",
-    image: "./todolist.gif",
-    link: "https://davidpd2690.github.io/to-do",
+      "This is a simple chat app made with React, chatengine.io and axios. Try it out! username: guest password: guest",
+    image: "./chatapp.gif",
+    link: "https://chat-app-dpd2690.netlify.app/",
   },
   {
     title: "Google Keep clone",
